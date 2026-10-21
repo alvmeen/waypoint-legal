@@ -40,17 +40,17 @@
 <body>
 <main>
 <h1>Waypoint Privacy Policy</h1>
-<p class="updated">Last updated 12 October 2026</p>
+<p class="updated">Last updated 21 October 2026</p>
 
 <p>This policy explains what information the Waypoint iOS app (“Waypoint”, “the app”) handles, where it is kept, who it is shared with, and the choices and rights you have. “We”, “us” and “our” mean the developer that publishes Waypoint, based in Nigeria and named on its App Store page.</p>
 
 <div class="box">
 <h2 id="key-points">Summary of key points</h2>
-<p><strong>Do we have your data?</strong> Almost never. Waypoint has no accounts, and what you log is never stored on a server of ours. It’s stored on your device and, if iCloud is on, in your own private iCloud, which we can’t access.</p>
-<p><strong>Do we handle sensitive information?</strong> Yes, on your device. Your medication, doses, weight, food and mood are health information. The app processes them only to give you its features. They are never sold, never used for advertising and never used to train AI.</p>
-<p><strong>Does anything leave your device?</strong> Only when you ask the AI to estimate a meal, a nutrition label, an ingredient or an activity. Then the text or photo you gave is sent to an AI provider to get the estimate. Nothing else about you goes with it.</p>
-<p><strong>Do we track you?</strong> No. There are no ads, no analytics or tracking tools, and no advertising identifier.</p>
-<p><strong>How can you control it?</strong> Edit or delete any entry, delete everything with <em>Settings → Delete All Data</em>, turn iCloud, Apple Health and notifications on or off, or skip AI and enter values yourself. You can also email us at any time.</p>
+<p><strong>Do we have your data?</strong> Yes, as a backup. What you log is stored on your device and backed up to Waypoint’s own server so you can restore it after reinstalling the app or on a new iPhone. There’s no sign-in: the backup is tied to an anonymous account key kept in your iPhone’s Keychain, not to your name, email or Apple ID.</p>
+<p><strong>Do we handle sensitive information?</strong> Yes. Your medication, doses, weight, food and mood are health information. The app processes them only to give you its features. They are never sold, never used for advertising and never used to train AI.</p>
+<p><strong>Does anything leave your device?</strong> Your logs and meal photos go to our backup server. When you ask the AI to estimate a meal, a nutrition label, an ingredient or an activity, the text or photo you gave is also sent to an AI provider to get the estimate, and nothing else about you goes with it.</p>
+<p><strong>Do we track you?</strong> There are no ads in the app and we don’t collect the advertising identifier. To measure whether our ads on Instagram and Facebook lead to installs, the app uses Meta’s SDK, which tells Meta when the app is installed and opened and when a subscription is bought. Nothing you log is ever shared with Meta. See <a href="#tracking">section 15</a>.</p>
+<p><strong>How can you control it?</strong> Edit or delete any entry, delete everything (including the backup on our server) with <em>Settings → Delete All Data</em>, turn Apple Health and notifications on or off, or skip AI and enter values yourself. You can also email us at any time.</p>
 </div>
 
 <div class="box notice">
@@ -82,26 +82,27 @@
 </nav>
 
 <h2 id="who">1. Who we are</h2>
-<p>Waypoint is an independent app for people taking GLP-1 medications. It is published by a developer based in Nigeria and named on its App Store page, who is the data controller for the limited personal data we handle ourselves. In practice that means the emails you send us, AI requests while they pass through our server to our providers, and the anonymous device check described in <a href="#ai">section 4</a>.</p>
-<p>Waypoint is built to keep data with you. The app follows a few principles: collect only what a feature needs, keep it on your device or in your own iCloud, process it only for the purpose you used it for, and let you delete it at any time.</p>
+<p>Waypoint is an independent app for people taking GLP-1 medications. It is published by a developer based in Nigeria and named on its App Store page, who is the data controller for the personal data we handle ourselves: the backup of what you log, the emails you send us, AI requests while they pass through our server to our providers, and the anonymous device check described in <a href="#ai">section 4</a>.</p>
+<p>Waypoint is built to keep data with you. The app follows a few principles: collect only what a feature needs, keep the backup tied to an anonymous key rather than to who you are, process data only for the purpose you used it for, and let you delete it, everywhere, at any time.</p>
 
 <h2 id="data">2. Information Waypoint handles</h2>
 <table>
-<thead><tr><th>Category</th><th>Examples</th><th>Where it’s kept</th><th>Does it leave your devices?</th></tr></thead>
+<thead><tr><th>Category</th><th>Examples</th><th>Where it’s kept</th><th>Does it leave your device?</th></tr></thead>
 <tbody>
-<tr><td data-label="Category">Profile</td><td data-label="Examples">Sex and year of birth (if given), height, starting, current and goal weight, activity level, main goal, units</td><td data-label="Where it’s kept">Your device and your private iCloud</td><td data-label="Leaves your devices?">No</td></tr>
-<tr><td data-label="Category">Medication</td><td data-label="Examples">Medication name, dose, schedule, first or last dose date, dose log and notes</td><td data-label="Where it’s kept">Your device and your private iCloud</td><td data-label="Leaves your devices?">No</td></tr>
-<tr><td data-label="Category">Food and nutrition</td><td data-label="Examples">Meals, ingredients, calories and macros, saved foods, water and protein top-ups</td><td data-label="Where it’s kept">Your device and your private iCloud</td><td data-label="Leaves your devices?">Only the description or photo you ask the AI to estimate</td></tr>
-<tr><td data-label="Category">Food photos</td><td data-label="Examples">Photos of meals or nutrition labels you take or pick</td><td data-label="Where it’s kept">A small compressed copy with the food you log, on your device and in your private iCloud</td><td data-label="Leaves your devices?">Sent to the AI provider for that estimate</td></tr>
-<tr><td data-label="Category">Weight, activity and mood</td><td data-label="Examples">Weigh-ins, workouts and calories burned, mood and food-noise check-ins</td><td data-label="Where it’s kept">Your device and your private iCloud</td><td data-label="Leaves your devices?">Only an activity description you ask the AI to estimate</td></tr>
-<tr><td data-label="Category">Apple Health</td><td data-label="Examples">Step count and active energy (read only)</td><td data-label="Where it’s kept">Read on your device when shown</td><td data-label="Leaves your devices?">No</td></tr>
+<tr><td data-label="Category">Profile</td><td data-label="Examples">Sex and year of birth (if given), height, starting, current and goal weight, activity level, main goal, units</td><td data-label="Where it’s kept">Your device and our backup server</td><td data-label="Leaves your devices?">Backed up to our server</td></tr>
+<tr><td data-label="Category">Medication</td><td data-label="Examples">Medication name, dose, schedule, first or last dose date, dose log and notes</td><td data-label="Where it’s kept">Your device and our backup server</td><td data-label="Leaves your devices?">Backed up to our server</td></tr>
+<tr><td data-label="Category">Food and nutrition</td><td data-label="Examples">Meals, ingredients, calories and macros, saved foods, water and protein top-ups</td><td data-label="Where it’s kept">Your device and our backup server</td><td data-label="Leaves your devices?">Backed up to our server; the description or photo you ask the AI to estimate also goes to the AI provider</td></tr>
+<tr><td data-label="Category">Food photos</td><td data-label="Examples">Photos of meals or nutrition labels you take or pick</td><td data-label="Where it’s kept">A small compressed copy with the food you log, on your device and on our backup server</td><td data-label="Leaves your devices?">Backed up to our server, and sent to the AI provider for that estimate</td></tr>
+<tr><td data-label="Category">Weight, activity and mood</td><td data-label="Examples">Weigh-ins, workouts and calories burned, mood and food-noise check-ins</td><td data-label="Where it’s kept">Your device and our backup server</td><td data-label="Leaves your devices?">Backed up to our server; an activity description you ask the AI to estimate also goes to the AI provider</td></tr>
+<tr><td data-label="Category">Apple Health</td><td data-label="Examples">Step count and active energy (read only)</td><td data-label="Where it’s kept">Read on your device when shown</td><td data-label="Leaves your devices?">No. It isn’t backed up or sent anywhere</td></tr>
 <tr><td data-label="Category">AI device check</td><td data-label="Examples">An anonymous key made by your iPhone for Waypoint (Apple App Attest), a signature counter, and how many AI requests it made today</td><td data-label="Where it’s kept">Our AI server (Cloudflare)</td><td data-label="Leaves your devices?">Yes, when you first use AI. It isn’t linked to your name, Apple ID or anything you log</td></tr>
-<tr><td data-label="Category">Settings</td><td data-label="Examples">Reminder times and switches, units, targets</td><td data-label="Where it’s kept">Your device and your private iCloud</td><td data-label="Leaves your devices?">No</td></tr>
+<tr><td data-label="Category">Settings</td><td data-label="Examples">Reminder times and switches, units, targets</td><td data-label="Where it’s kept">Your device and our backup server</td><td data-label="Leaves your devices?">Backed up to our server</td></tr>
+<tr><td data-label="Category">Backup account key</td><td data-label="Examples">A random account number and secret your iPhone makes for Waypoint, kept in your Keychain (synced by iCloud Keychain so a new iPhone can restore)</td><td data-label="Where it’s kept">Your Keychain; our server keeps the account number and a one-way hash of the secret</td><td data-label="Leaves your devices?">Used to reach your backup. It isn’t linked to your name, email or Apple ID</td></tr>
 <tr><td data-label="Category">Subscription status</td><td data-label="Examples">Whether Waypoint Premium is active, trial eligibility</td><td data-label="Where it’s kept">Apple, checked by the app on your device</td><td data-label="Leaves your devices?">Handled by Apple. We don’t receive your payment details</td></tr>
 <tr><td data-label="Category">Support messages</td><td data-label="Examples">Your email address and what you write to us</td><td data-label="Where it’s kept">Our support inbox</td><td data-label="Leaves your devices?">Yes, when you choose to email us</td></tr>
 </tbody>
 </table>
-<p><strong>What we don’t collect:</strong> your name, phone number, contacts, precise or approximate location, advertising identifier (IDFA), usage analytics, or browsing activity. There is no account to create.</p>
+<p><strong>What we don’t collect:</strong> your name, phone number, contacts, precise or approximate location, advertising identifier (IDFA), or browsing activity. Apart from the app events described in <a href="#tracking">section 15</a>, there are no usage analytics. There is no account to sign up for or sign in to.</p>
 <p>If you choose to share crash reports and diagnostics with app developers in iOS Settings, Apple may give us anonymous crash reports under Apple’s terms. These help us fix bugs and don’t identify you.</p>
 <p>Please don’t enter other people’s information, government ID numbers or payment details in free-text fields such as notes or meal descriptions.</p>
 
@@ -111,14 +112,14 @@
 <tbody>
 <tr><td data-label="Purpose">Tracking features: logs, dose schedule, countdowns, charts, daily targets, medication level estimate</td><td data-label="Information used">Profile, medication, food, weight, activity, mood, Apple Health</td><td data-label="Legal basis">Providing the app you asked for (contract), and your explicit consent for health information, which you give by entering it and can withdraw by deleting it</td></tr>
 <tr><td data-label="Purpose">AI estimates of food, labels, ingredients and activities</td><td data-label="Information used">The description or photo you submit</td><td data-label="Legal basis">Contract, and your explicit consent each time you choose to use AI</td></tr>
-<tr><td data-label="Purpose">Syncing and backup between your devices</td><td data-label="Information used">Everything you log</td><td data-label="Legal basis">Contract. Controlled by your iCloud setting</td></tr>
+<tr><td data-label="Purpose">Backup and restore (after reinstalling or on a new iPhone)</td><td data-label="Information used">Everything you log, meal photos, the backup account key</td><td data-label="Legal basis">Contract, and your explicit consent for health information, which you can withdraw with Delete All Data</td></tr>
 <tr><td data-label="Purpose">Reminders</td><td data-label="Information used">Schedule and reminder settings</td><td data-label="Legal basis">Contract and your notification permission</td></tr>
 <tr><td data-label="Purpose">Subscriptions and the free plan’s meal limit</td><td data-label="Information used">Subscription status from Apple, number of meals logged today</td><td data-label="Legal basis">Contract</td></tr>
 <tr><td data-label="Purpose">Answering support requests</td><td data-label="Information used">Your email and message</td><td data-label="Legal basis">Legitimate interests in helping you, or contract</td></tr>
 <tr><td data-label="Purpose">Complying with the law</td><td data-label="Information used">Only what we actually hold</td><td data-label="Legal basis">Legal obligation</td></tr>
 </tbody>
 </table>
-<p>We don’t use your information for advertising or marketing, don’t build profiles about you, don’t make automated decisions with legal or similarly significant effects, and don’t use your content, photos or health information to train AI models.</p>
+<p>Apart from measuring our own ads (<a href="#tracking">section 15</a>), we don’t use your information for advertising or marketing, don’t build profiles about you, don’t make automated decisions with legal or similarly significant effects, and don’t use your content, photos or health information to train AI models.</p>
 
 <h2 id="ai">4. AI food and activity estimates</h2>
 <p>When you describe a meal, scan a meal or nutrition label, add or rename an ingredient, or describe a workout, Waypoint sends that text or photo to an AI service so it can estimate calories, macros or effort.</p>
@@ -133,13 +134,13 @@
 <p>You can stop access at any time in the Health app → Sharing → Apps → Waypoint.</p>
 
 <h2 id="permissions">6. Camera, photos and notifications</h2>
-<p><strong>Camera and photos.</strong> These are optional and used only when you scan food or a nutrition label. Photos you take or pick are used for that estimate and, if you log the food, kept on your device with it. Waypoint doesn’t browse or upload your photo library.</p>
+<p><strong>Camera and photos.</strong> These are optional and used only when you scan food or a nutrition label. Photos you take or pick are used for that estimate and, if you log the food, kept with it on your device, with a compressed copy in your backup. Waypoint doesn’t browse or upload your photo library.</p>
 <p><strong>Notifications.</strong> Dose, protein, weight and calorie reminders are scheduled on your device. No reminder content is sent anywhere. You can change them in <em>Settings → Reminders</em> or turn them off in iOS Settings.</p>
 
 <h2 id="storage">7. Where data is stored and for how long</h2>
 <ul>
   <li><strong>On your device:</strong> until you delete the entry, use <em>Delete All Data</em>, or delete the app.</li>
-  <li><strong>In your private iCloud (Apple CloudKit):</strong> if you’re signed in to iCloud and iCloud is on for Waypoint, your data syncs there so it’s backed up and appears on your other devices. Apple stores it under your iCloud account and Apple’s privacy terms, and we can’t access it. It stays until you delete it. Deleting the app on one device doesn’t remove it from iCloud.</li>
+  <li><strong>On our backup server (Cloudflare):</strong> what you log, and compressed meal photos, are kept in a database for your anonymous account so you can restore them. Each account’s data is stored separately and reached only with its secret key. It stays until you delete the entry or use <em>Delete All Data</em>, which removes the backup and its photos from our server. Deleting the app alone doesn’t remove the backup, so you can restore it later. We may delete backups of accounts that haven’t been used for two years.</li>
   <li><strong>Device backups:</strong> if your iPhone backs up to iCloud or a computer, Waypoint’s data is included under Apple’s terms, as with any app.</li>
   <li><strong>AI requests:</strong> not stored by us. Providers keep them only as their own terms allow.</li>
   <li><strong>AI device check:</strong> the anonymous device key and today’s request count are kept on our server for as long as the app uses AI on that device. The count resets daily. Cloudflare keeps basic request logs, such as time and status, for a few days.</li>
@@ -150,33 +151,34 @@
 <table>
 <thead><tr><th>Recipient</th><th>What</th><th>Why</th></tr></thead>
 <tbody>
-<tr><td data-label="Recipient">Apple</td><td data-label="What">Your synced data (iCloud/CloudKit), subscription purchases (App Store), Apple Health access (HealthKit)</td><td data-label="Why">Storage and sync, payments, reading steps and active energy</td></tr>
-<tr><td data-label="Recipient">Cloudflare and Vercel</td><td data-label="What">AI request text or photo, and the anonymous device check</td><td data-label="Why">Hosting our AI server, and routing the request to the AI model</td></tr>
+<tr><td data-label="Recipient">Apple</td><td data-label="What">The backup account key (iCloud Keychain), subscription purchases (App Store), Apple Health access (HealthKit), and the App Attest device check</td><td data-label="Why">Carrying the key to your new iPhone, payments, reading steps and active energy, confirming a genuine copy of Waypoint</td></tr>
+<tr><td data-label="Recipient">Cloudflare</td><td data-label="What">Your backup (logs and meal photos), AI requests passing through, and the anonymous device check</td><td data-label="Why">Hosting our server: it stores the backup for us and doesn’t use it for its own purposes</td></tr>
+<tr><td data-label="Recipient">Vercel</td><td data-label="What">AI request text or photo</td><td data-label="Why">Routing the request to the AI model</td></tr>
 <tr><td data-label="Recipient">OpenAI, Anthropic or Google</td><td data-label="What">AI request text or photo</td><td data-label="Why">Generating the estimate</td></tr>
+<tr><td data-label="Recipient">Meta (Facebook SDK)</td><td data-label="What">That the app was installed and opened, subscription purchases, and basic device details (model, iOS version, app version)</td><td data-label="Why">Measuring whether our Instagram and Facebook ads lead to installs and subscriptions. Never your logs or health information</td></tr>
 <tr><td data-label="Recipient">Google (Gmail)</td><td data-label="What">Emails you send us</td><td data-label="Why">Our support inbox</td></tr>
 <tr><td data-label="Recipient">Authorities</td><td data-label="What">Only what we actually hold, if legally required</td><td data-label="Why">Complying with the law, or protecting rights and safety</td></tr>
 </tbody>
 </table>
-<p>We don’t sell personal information and don’t share it for advertising. If Waypoint is ever transferred to a new owner, this policy would continue to apply to anything we hold, and we would tell you in advance.</p>
+<p>We don’t sell personal information. The only data shared for advertising is the limited app activity Meta uses to measure our ads (above); nothing you log is shared. If Waypoint is ever transferred to a new owner, this policy would continue to apply to anything we hold, and we would tell you in advance.</p>
 
 <h2 id="transfers">9. International transfers</h2>
-<p>Apple and our AI providers may process data in the United States and other countries outside where you live. Where data protection law requires it, these transfers rely on safeguards the providers offer, such as adequacy decisions (including the EU–US Data Privacy Framework where a provider is certified) and Standard Contractual Clauses.</p>
+<p>Cloudflare, Apple and our AI providers may process data in the United States and other countries outside where you live. Where data protection law requires it, these transfers rely on safeguards the providers offer, such as adequacy decisions (including the EU–US Data Privacy Framework where a provider is certified) and Standard Contractual Clauses.</p>
 
 <h2 id="security">10. Security</h2>
-<p>Waypoint keeps your data in the app’s private storage on iOS, protected by your device passcode and iOS data protection. iCloud data is encrypted by Apple in transit and on its servers. AI requests are sent over encrypted HTTPS connections. Our only server, the AI relay, doesn’t store what you log or what you send to the AI, so there is no central Waypoint database of user information to breach.</p>
+<p>Waypoint keeps your data in the app’s private storage on iOS, protected by your device passcode and iOS data protection. Everything sent to our server goes over encrypted HTTPS connections, and Cloudflare encrypts stored data at rest. Each backup account is kept in its own separate database and can only be read with its secret key, which stays in your Keychain; our server keeps only a one-way hash of it. New accounts can only be created by a genuine copy of Waypoint (Apple App Attest). Our server doesn’t keep what you send to the AI.</p>
 <p>No method of storage or transmission is completely secure. Keeping your device passcode and Apple ID secure helps protect your data.</p>
 
 <h2 id="rights">11. Your choices and rights</h2>
 <p>Most of your data is in your hands, so you can act on it directly:</p>
 <ul>
   <li><strong>See and correct:</strong> everything you log is visible in the app and can be edited.</li>
-  <li><strong>Delete:</strong> delete any single entry, or use <em>Settings → Delete All Data</em> to permanently remove everything Waypoint stored, on this device and in your iCloud (so on your other devices too). This also cancels its reminders. It doesn’t cancel a subscription; do that in your App Store settings.</li>
-  <li><strong>Remove iCloud copies after deleting the app:</strong> iOS Settings → [your name] → iCloud → Manage Storage → Waypoint.</li>
-  <li><strong>Keep data on one device:</strong> turn off iCloud for Waypoint in iOS Settings.</li>
+  <li><strong>Delete:</strong> delete any single entry (it’s removed from the backup too), or use <em>Settings → Delete All Data</em> to permanently remove everything Waypoint stored, on this device and on our server, including meal photos and the backup account. This also cancels its reminders. If you’re offline, the server copy is deleted the next time the app connects. It doesn’t cancel a subscription; do that in your App Store settings.</li>
+  <li><strong>Deleted the app without deleting your data?</strong> Reinstall Waypoint (your backup comes back) and use <em>Delete All Data</em>, or email us.</li>
   <li><strong>Withdraw permissions:</strong> turn off Apple Health, camera or notification access in iOS Settings at any time.</li>
   <li><strong>Avoid AI:</strong> enter values yourself instead of using the AI estimate.</li>
 </ul>
-<p>For anything else, including questions about support emails we hold, email <a href="mailto:support.waypoint.app@gmail.com">support.waypoint.app@gmail.com</a>. Requests are free. We may ask for information to confirm the request is yours, and we reply within one month. Because data you log isn’t on any server of ours, there is nothing for us to export or delete on our side beyond support emails.</p>
+<p>For anything else, including questions about support emails we hold, email <a href="mailto:support.waypoint.app@gmail.com">support.waypoint.app@gmail.com</a>. Requests are free. We may ask for information to confirm the request is yours, and we reply within one month. Because backups aren’t linked to names or emails, the quickest way to delete one is <em>Delete All Data</em> in the app; if you can’t, email us and we’ll help.</p>
 
 <h2 id="eea">12. People in Nigeria, the EEA, the UK and Switzerland</h2>
 <p>Under the Nigeria Data Protection Act 2023, the GDPR, the UK GDPR and Data Protection Act 2018, and the Swiss Federal Act on Data Protection, you have the right to:</p>
@@ -201,14 +203,14 @@
   <li>limit the use of sensitive personal information</li>
   <li>not be discriminated against for using these rights</li>
 </ul>
-<p>In the last 12 months, the only personal information we may have received is the content of AI requests (passed to the providers in <a href="#sharing">section 8</a> to generate an estimate), the anonymous AI device check, and support emails (identifiers and the content of your message). Health information you log stays on your devices and in your iCloud.</p>
-<p>We do not sell or share personal information for cross-context behavioral advertising, and we use sensitive personal information only to provide the app’s features. To make a request, email us. An authorised agent may act for you with written permission.</p>
+<p>In the last 12 months, the personal information we may have received is: the backup of what you log, including health information and meal photos, under an anonymous account key; the content of AI requests (passed to the providers in <a href="#sharing">section 8</a> to generate an estimate); the anonymous AI device check; and support emails (identifiers and the content of your message).</p>
+<p>We do not sell personal information, and we use sensitive personal information only to provide the app’s features. We share limited app activity (installs, app opens and subscription purchases) with Meta to measure our ads, which California law may treat as “sharing”; you can opt out by emailing us. To make a request, email us. An authorised agent may act for you with written permission.</p>
 
 <h2 id="children">14. Children</h2>
 <p>Waypoint is meant for adults taking GLP-1 medications and is not directed to anyone under 18. We don’t knowingly collect information from children. If you believe a child has sent us information, email us and we’ll delete it.</p>
 
 <h2 id="tracking">15. Cookies, tracking and advertising</h2>
-<p>The app has no advertising, no analytics or tracking SDKs, and doesn’t use cookies. It doesn’t ask for permission to track you, because it doesn’t. This page doesn’t set cookies either.</p>
+<p>The app shows no ads and doesn’t use cookies. It includes Meta’s SDK (the Facebook SDK) only so we can tell whether our Instagram and Facebook ads lead to installs and subscriptions. The SDK sends Meta app events (the app was installed or opened, a subscription was bought) with basic device details. It doesn’t collect the advertising identifier, and nothing you log (doses, food, weight, mood, Apple Health) is ever sent to it. Meta handles this data under its own privacy policy and Apple’s privacy rules, including aggregated, privacy-preserving measurement when you haven’t allowed tracking. This page doesn’t set cookies.</p>
 <p>Links to other websites, such as Apple’s terms or a health resource, are governed by those sites’ own policies.</p>
 
 <h2 id="changes">16. Changes to this policy</h2>
