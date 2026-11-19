@@ -28,7 +28,7 @@
 <body>
 <main>
 <h1>Waypoint Terms of Use</h1>
-<p class="updated">Last updated 12 October 2026</p>
+<p class="updated">Last updated 18 November 2026</p>
 
 <p>These Terms of Use (“Terms”) are an agreement between you and the developer that publishes Waypoint, based in Nigeria and named on its App Store page (“we”, “us”, “our”). They cover your use of the Waypoint iOS app and its features, including Waypoint Premium (together, “Waypoint” or “the app”).</p>
 <p>By downloading or using Waypoint, you agree to these Terms and to our <a href="privacy-policy.html">Privacy Policy</a>. If you don’t agree, please don’t use the app.</p>
@@ -36,7 +36,7 @@
 <div class="box notice">
 <h3>Important: Waypoint is not medical advice</h3>
 <p>Waypoint is a self-tracking and information tool for adults who take GLP-1 medications prescribed by their own healthcare provider. It is not a healthcare provider, pharmacy or medical device. It does not diagnose, treat or prevent any condition, and it does not prescribe, recommend or adjust doses.</p>
-<p>Calorie, macro and activity estimates, daily targets, countdowns and the medication level chart are approximations and may be wrong. Never start, stop or change a medication or dose, or delay seeking care, because of anything in the app. Always follow your prescriber’s guidance. In an emergency, contact your local emergency services.</p>
+<p>Calorie, macro and activity estimates, daily targets, countdowns, the projected goal date and the medication level chart are approximations and may be wrong. Never start, stop or change a medication or dose, or delay seeking care, because of anything in the app. Always follow your prescriber’s guidance. In an emergency, contact your local emergency services.</p>
 </div>
 
 <nav class="box toc" aria-label="Contents">
@@ -74,13 +74,13 @@
   <li>track protein, water, weight, activity and mood</li>
   <li>follow your progress toward goals you set</li>
 </ul>
-<p>Waypoint has no accounts. Your data is stored on your device and, if you use iCloud, in your private iCloud, as described in the Privacy Policy.</p>
+<p>Waypoint has no sign-in. Your data is stored on your device and backed up to Waypoint’s server under an anonymous account key kept in your iPhone’s Keychain, as described in the Privacy Policy.</p>
 
 <h2 id="medical">2. Health and medical disclaimer</h2>
 <ul>
   <li><strong>Information only.</strong> Everything in Waypoint is for general information and personal tracking. Using it doesn’t create a doctor–patient or any other healthcare relationship.</li>
   <li><strong>No medical services.</strong> Waypoint does not provide diagnosis, prescribing, dosing advice, telehealth, pharmacy services or emergency support. It isn’t registered with or overseen by any health regulator as a medical device.</li>
-  <li><strong>Estimates can be wrong.</strong> Targets come from general formulas, food and activity numbers from estimates, and the medication level chart from typical published profiles, not your own body. Results vary from person to person.</li>
+  <li><strong>Estimates can be wrong.</strong> Targets come from general formulas, food and activity numbers from estimates, the projected goal date from an average rate of weight change, and the medication level chart from typical published profiles, not your own body. Results vary from person to person, and the goal date is not a promise.</li>
   <li><strong>Your responsibility.</strong> You are responsible for your health decisions. Talk to a qualified healthcare professional before making changes to your medication, diet or exercise, especially if you are pregnant, breastfeeding, under medical supervision or have a health condition.</li>
   <li><strong>Reminders aren’t guaranteed.</strong> Notifications depend on your device, settings and iOS, and may be delayed or not delivered. Don’t rely on Waypoint as your only reminder to take a medication.</li>
 </ul>
@@ -119,9 +119,9 @@
 </ul>
 
 <h2 id="content">7. Your content and data</h2>
-<p>What you enter in Waypoint (logs, notes, photos and descriptions) is yours. Most of it never reaches us: it stays on your device and in your iCloud.</p>
+<p>What you enter in Waypoint (logs, notes, photos and descriptions) is yours. We store it on our server only as your backup, so you can restore it, and we don’t use it for anything else.</p>
 <p>When you use an AI feature, you give us and our AI providers permission to process the text or photo you submit only to produce your estimate. We don’t use your content to train AI models, and we don’t claim ownership of it.</p>
-<p>You are responsible for keeping your device, passcode and Apple ID secure, and for backing up your data. If you use <em>Delete All Data</em>, delete entries, or turn off iCloud and delete the app, your data may be gone permanently. We can’t recover it because we don’t hold a copy.</p>
+<p>You are responsible for keeping your device, passcode and Apple ID secure. The backup is reached through the account key in your Keychain: if that key is lost (for example a new iPhone set up without iCloud Keychain), we can’t link the backup to you. If you use <em>Delete All Data</em> or delete entries, they are removed from the backup too and can’t be recovered.</p>
 <p>How we handle personal data is explained in the <a href="privacy-policy.html">Privacy Policy</a>.</p>
 
 <h2 id="premium">8. Waypoint Premium, trials and billing</h2>
@@ -146,8 +146,8 @@
 <h2 id="third">9. Third-party services</h2>
 <p>Waypoint relies on services we don’t control, including:</p>
 <ul>
-  <li>Apple (the App Store, iCloud and CloudKit, Apple Health, notifications)</li>
-  <li>our hosting and AI providers (Cloudflare, Vercel AI Gateway, and models from OpenAI, Anthropic or Google)</li>
+  <li>Apple (the App Store, iCloud Keychain, App Attest, Apple Health, notifications)</li>
+  <li>our hosting and AI providers (Cloudflare, which also stores your backup; Vercel AI Gateway; and models from OpenAI, Anthropic or Google)</li>
 </ul>
 <p>Your use of those services is subject to their own terms and privacy policies. We aren’t responsible for their availability, accuracy or conduct.</p>
 <p>The app may link to outside websites, such as health resources. We don’t control or endorse them.</p>
